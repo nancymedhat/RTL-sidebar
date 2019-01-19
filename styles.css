@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Harmattan|Mirza');
+/** global **/
+body {
+	margin:0px auto;
+	padding:0;
+	font-family: 'Harmattan', sans-serif;
+	font-size: 1.2em;
+	color:white;
+	background:#fff;
+text-align: right;
+}
+
+* {
+	margin:0;
+	padding:0;
+}
+
+
+
+/** body **/
+section#body {
+	padding:10px 0;
+	background:#fff;
+   font-family: 'Harmattan', sans-serif;
+    font-size: 1.2em;
+}
+
+
+/** content+sidebar styles **/
+section#content {
+	width:600px;
+}
+.column-left {
+	float:left;
+	margin-right:20px;
+}
+.column-right {
+	float:right;
+}
+aside#sidebar {
+	width:268px;
+    position: absolute;
+    right: 0;
+    margin-right: 37px;
+ background-color: white;
+    top: 0;
+}
+aside#sidebar ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+aside#sidebar li ul {
+	margin-bottom:20px;
+}
+aside#sidebar li ul li {
+	display:block;
+	padding:12px 10px;
+	    border-bottom: 1px solid #ccc;
+	color:black;
+}
+aside#sidebar li {
+	color:#666;
+	font-size: 0.9em;
+}
+aside#sidebar li ul li a {
+	text-decoration:none;
+	color:#666;
+	font-weight:normal;
+}
+aside#sidebar li ul li a:hover {
+	color:#666;
+	text-decoration:underline;
+    background-color: #0c3a858c;
+    
+}
+
+
+aside#sidebar li ul.blocklist li {
+	padding:0;
+}
+aside#sidebar li ul.blocklist li.selected-item  {
+	border-bottom:none;
+}
+aside#sidebar li ul.blocklist li.selected-item a,
+aside#sidebar li ul.blocklist li.selected-item a:hover {
+	color:white;
+	font-weight:bold;
+        background: rgba(12, 16, 133, 0.82);
+	
+}
+aside#sidebar li ul.blocklist li a:hover {
+	  background-color: #cccccc61;
+	text-decoration:none;
+}
+aside#sidebar li ul.blocklist li a {
+	color:#666;
+;
+	display:block;
+	padding:10px 10px;
+}
+
+aside#sidebar h4 { 
+	color:black;
+	font-size:16px;
+	text-transform:uppercase;
+	font-weight:bold;
+	margin:0;
+	padding:7px 10px;
+}
+
+
+article {
+    padding: 10px 10px 20px 5px;
+	font-size: 0.9em;
+ }
+
+article h2 {
+    padding-bottom: 0;
+   font-size: 2.1em;
+}
+
+article .article-info {
+    color: white;
+    font-size: 0.9em;
+    letter-spacing: -0.5px;
+    padding: 0 0 10px 0;
+}
+
+article .article-info a { 
+	color: white;
+}
+
+
+
+/** footer **/
+footer {
+	padding:20px 0px;
+	color:#fff;
+	border-top:1px solid #ccc;
+}
+
+footer p {
+	color:#666;
+	margin:0;
+	font-size:11px;
+	width:50%;
+}
+footer p.left { float:left; text-align:left; }
+footer p.right { float:right; text-align:right; }
+footer p a {
+	color:#666;
+	font-weight:bold;
+	text-decoration:none;
+	border-bottom:1px solid #999;
+}
+footer p a:hover { color:#0C3A85; border-bottom-color: #0C3A85; }
+
+
+/** clear fix **/
+.clear:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clear {
+	display: inline-block;
+}
+.clear {
+	display: block;
+}
+
+
+
+
+
+@media screen and (max-width: 740px) {
+
+	body { font-size: 0.9em; }	
+
+	#sitename { letter-spacing:-2px; text-align:center; }
+
+
+	.width { width:auto; padding-left: 10px; padding-right: 10px; }
+
+	.column-left, .column-right { margin:0 5px; }
+	
+	section#content, aside#sidebar { float: none; width: auto; }
+
+	footer .footer-content ul { width: auto; float: none; }
+}
+
+
+@media screen and (max-width: 540px) {
+
+	body { font-size: 0.8em; }
+
+	header, header h1 a, header h1 a:hover { text-align: center; padding: 10px 0 0 0; font-size: 1.1em; }
+
+	nav ul li { float: none; text-align:center;  }
+
+	nav ul li a { margin-top: 0; padding: 0.5em; }
+
+	nav { height: auto; position: relative; }
+
+}
